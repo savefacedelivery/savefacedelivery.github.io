@@ -85,7 +85,7 @@
         setTimeout(() => {
             querySelector(".loading").classList.add("hidden");
         }, 1000)
-        var url = "https://script.google.com/macros/s/AKfycbxsQ1iQtlZ-xmKv_HkeEt4d4zIFhVhPHNpErmPXg05n2BKv0jI/exec?action=post";
+        var url = "https://script.google.com/macros/s/AKfycbzeTwaYg5y-8nOAgVe4wH8nngoFPabtaefAalQPfIO4FuCVJe28/exec?action=post";
         fetch(url, {
             method: 'POST',
             headers: myHeaders,
@@ -97,7 +97,7 @@
             querySelector(".success").classList.remove('hidden');
             setTimeout(() => {
                 querySelector(".success").classList.add('hidden');
-            }, 3000);
+            }, 10000);
         })
     }
 
