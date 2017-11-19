@@ -18,10 +18,10 @@
         hidden {
             display: false;
         }
-
+/* 
         #description {
-            height: 200px;
-        }
+            height: ;
+        } */
 
         .loading {
             display: grid;
@@ -51,6 +51,12 @@
             <div class="success hidden">
                 <b>Order Successfully Placed</b>
             </div>
+            <label for="paymentMethod">Item:</label>
+            <select name="orderItem">
+                <option value="quickPack">Quick Pack &nbsp &nbsp $2.99</option>
+                <option value="twelvePack">12 Pack &nbsp &nbsp  $7.99</option>
+                <option value="twentyFourPack">24 Pack  &nbsp &nbsp  $14.99</option>
+            </select>
             <label for="email">Email:</label>
             <input id="email" type="email" name="email" required>
             <label for="order">Order:</label>
@@ -59,7 +65,7 @@
             <input id="address" type="text" name="address" required>
             <label for="phone">Phone:</label>
             <input id="phone" type="tel" name="phone">
-            <label for="description">Description:</label>
+            <label for="description">Notes:</label>
             <input id="description" type="text" name="description" required>
             <label for="paymentMethod">Payment Method:</label>
             <select name="paymentMethod" onchange="handlePayment(event)">
